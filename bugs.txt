@@ -1,0 +1,1 @@
+If i make cards scale on hover, it messes up the edit menu 

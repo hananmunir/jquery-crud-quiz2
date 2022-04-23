@@ -1,0 +1,140 @@
+.trip-card {
+  border: 1px solid lightgray;
+  height: 100%;
+  border-radius: 0.25rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: 0.7s all ease-out;
+  cursor: pointer;
+}
+/* .trip-card:hover {
+  transform: scale(1.02);
+} */
+
+.trip-date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0.25rem;
+  z-index: 888;
+  color: #fff;
+  font-weight: 600;
+  background: #ff512f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #dd2476,
+    #ff512f
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #dd2476,
+    #ff512f
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  opacity: 0.95;
+  padding: 2rem 1rem;
+}
+.trip-text {
+  padding: 1.5rem;
+}
+.trip-img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  margin-top: 2.5rem;
+}
+
+.trip-info {
+  margin: 1.4rem 0 0.5rem 0;
+  align-items: center;
+  color: gray;
+  display: flex;
+}
+
+.trip-info span {
+  font-size: 0.9rem;
+}
+
+.trip-duration {
+  margin-left: 1rem;
+}
+
+.tag-icon {
+  margin-right: 0.3rem;
+  font-size: 0.8rem;
+}
+
+.trip-desc {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.trip-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.trip-details {
+  color: gray;
+  font-size: 0.9rem;
+}
+
+.trip-more-info {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.8rem;
+  font-weight: 700;
+  position: absolute;
+  bottom: 0;
+  transition: 0.3s all ease-out;
+  margin-bottom: 1rem;
+}
+
+.my-menu:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.my-dropdown {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+.my-dropdown:hover {
+  z-index: 999;
+}
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+  .navbar .nav-item:hover .nav-link {
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 750px) {
+  .trip-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .trip-duration {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .trip-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .trip-duration {
+    margin-left: 0;
+  }
+}
